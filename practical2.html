@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Matrix Layout</title>
+    <style>
+        :root { --dark: #121214; --light: #f4f4f9; --accent: #6366f1; }
+        body { font-family: system-ui, sans-serif; background: var(--light); color: var(--dark); margin: 0; padding: 2rem; }
+        main { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1200px; margin: auto; }
+        section { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        code { background: #e0e0e6; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <header style="text-align: center; margin-bottom: 3rem;">
+        <h1>Advanced Native HTML5 Core Engine</h1>
+        <p>Demonstrating semantic complexity, native components, and graphic rendering.</p>
+    </header>
+
+    <main>
+        <!-- 1. ADVANCED FORM VALIDATION ENGINE (NO JS REQUIRED) -->
+        <section>
+            <h2>🔒 Secure Semantic Form</h2>
+            <form action="/submit-endpoint" method="POST">
+                <p>
+                    <label for="username">Username (Alphanumeric, 4-12 chars):</label><br>
+                    <input type="text" id="username" name="username" required 
+                           pattern="^[a-zA-Z0-9]{4,12}$" placeholder="User123">
+                </p>
+                <p>
+                    <label for="secure-key">Cryptographic Token (Hexadecimal):</label><br>
+                    <input type="text" id="secure-key" name="secure-key" required 
+                           pattern="^[0-9a-fA-F]{8}$" placeholder="a1b2c3d4">
+                </p>
+                <p>
+                    <label for="range-picker">Resource Allocation Limit:</label><br>
+                    <input type="range" id="range-picker" name="range" min="0" max="100" step="5" list="tickmarks">
+                    <datalist id="tickmarks">
+                        <option value="0" label="Min"></option>
+                        <option value="25"></option>
+                        <option value="50" label="Mid"></option>
+                        <option value="75"></option>
+                        <option value="100" label="Max"></option>
+                    </datalist>
+                </p>
+                <button type="submit" style="background: var(--accent); color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer;">Execute Payload</button>
+            </form>
+        </section>
+
+        <!-- 2. NATIVE DIALOG CONTROL & INTERACTIVE DETAILS -->
+        <section>
+            <h2>MODAL & ACCORDION MATRIX</h2>
+            <p>Interactive nodes controlled strictly via HTML5 attributes:</p>
+            
+            <!-- Native Accordion -->
+            <details style="border: 1px solid #ccc; padding: 0.5rem; border-radius: 4px; margin-bottom: 1rem;">
+                <summary style="cursor: pointer; font-weight: bold;">Expand System Architecture Specifications</summary>
+                <div style="padding-top: 0.5rem;">
+                    <p>Core Node: <code>0x7FFF</code><br>Sub-Processors: 4 Active Threads</p>
+                </div>
+            </details>
+
+            <!-- Native Dialog Trigger via CSS/HTML fallback or standard declaration -->
+            <button onclick="document.getElementById('native-modal').showModal()" style="padding: 0.5rem 1rem;">Open Native Overlay Window</button>
+            
+            <dialog id="native-modal" style="border: none; border-radius: 8px; padding: 2rem; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+                <h3>System Authorization Notice</h3>
+                <p>You are accessing an isolated programmatic component container layer.</p>
+                <button onclick="this.closest('dialog').close()" style="float: right;">Terminate View</button>
+            </dialog>
+        </section>
+
+        <!-- 3. INLINE VECTOR GRAPHICS (SVG) ENGINE -->
+        <section>
+            <h2>📐 Dynamic Vector Rendering</h2>
+            <p>Complex polygon geometries rendered directly inside the DOM tree:</p>
+            <div style="text-align: center; background: #1a1a24; padding: 1rem; border-radius: 6px;">
+                <svg width="200" height="200" viewBox="0 0 100 100">
+                    <!-- Complex Pathing Grid Mapping -->
+                    <polygon points="50,5 90,35 90,75 50,95 10,75 10,35" fill="none" stroke="#6366f1" stroke-width="2"/>
+                    <polygon points="50,15 80,40 80,70 50,85 20,70 20,40" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2,2"/>
+                    <circle cx="50" cy="50" r="15" fill="#6366f1" opacity="0.8"/>
+                    <line x1="50" y1="5" x2="50" y2="95" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                    <line x1="10" y1="35" x2="90" y2="75" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                    <line x1="10" y1="75" x2="90" y2="35" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                </svg>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
